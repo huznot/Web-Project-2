@@ -16,7 +16,7 @@
 /* Body styling including background color, image, and text color */
 body {
     background-color: rgb(41, 41, 41);
-    background-image: url(Untitled\ design\ \(5\).png);
+    background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
