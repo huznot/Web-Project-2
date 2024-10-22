@@ -1,0 +1,223 @@
+<!--
+Name: Muhammad Huzaifa
+Course: Web Dev 20s
+Teacher: Ms Hoitink
+School: Pembina Trails Collegiate
+Date Last Modified: 2024-10-21
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and FontAwesome icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treaty One</title>
+    <script src="https://kit.fontawesome.com/b5f4641468.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* Flexbox layout for body (this is not in the style.css file because
+         this webpage has a slightly different layout than what i want for the rest of the website) */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+        }
+
+        /* Full width for images in map section */
+        #map-section img {
+            width: 100%;
+        }
+        /* Footer styling with background color, padding, and text alignment */
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 10px 0;
+            position: relative;
+            margin-bottom: 0px;
+            width: 100%;
+        }
+
+        /* Links inside the footer */
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+        /* Image styling */
+        .pic {
+            margin-bottom: 20px;
+            height: auto;
+        }
+
+        /* Flex layout for image grid */
+        #image-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Styling for map section */
+        #map-section {
+            margin-right: 10px; 
+            width: 100%;
+        }
+
+        /* Grid layout for two maps side by side */
+        #two-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            align-items: center;
+            justify-items: center;
+        }
+
+        /* Centering images and captions */
+        #two-images figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Full width images */
+        #two-images img {
+            width: 100%;
+        }
+
+        /* Center text for figcaptions */
+        #two-images figcaption {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Main content layout */
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100vh;
+            padding: 20px;
+            flex: 1; 
+        }
+
+        /* Span text color */
+        span {
+            color: #ff8c78;
+        }
+        /* Paragraphs styling */
+        p{
+            margin-top: 10px;
+        }
+        /* Style for the things with class topic */
+        .topic{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with navigation and search bar -->
+    <header>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Sources</a></li>
+            </ul>
+            <div id="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Section has a class because this same css design will be used for other web pages -->
+        <section class="content-section">
+            <!-- Treaty logo and caption -->
+            <figure>
+                <figcaption><em>Image via <a href="https://lpband.ca/treaty-one-nation/" target="_blank">Long Plain First Nation</a></em></figcaption> 
+                <img src="output-onlinepngtools (3).png" class="pic" alt="Treaty One Logo used on the Treaty One website">
+            </figure>
+
+            <!-- Description -->
+            <h1>Treaty One</h1>
+            <p>
+                Treaty No. 1, also known as the "Stone Fort Treaty," was signed at Lower Fort Garry on August 3, 1871, between the Canadian Crown and seven First Nations. The treaty granted European settlers access to Indigenous lands for agriculture and industrial development, while protecting certain Indigenous rights.
+            </p>
+
+            <!-- Communities involved section -->
+            <h2>Communities Involved</h2>
+            <p>
+                The Treaty involved several First Nations including: 
+            </p>
+            <ul>
+                <li><span>Brokenhead Ojibway Nation</span> - Anishinaabe (Saulteaux/Ojibwa) nation</li>
+                <li><span>Long Plain First Nation</span> - Ojibwa and Dakota nations</li>
+                <li><span>Peguis First Nation</span> - Cree and Ojibwa nations</li>
+                <li><span>Roseau River Anishinabe First Nation</span> - Ojibwa nation</li>
+                <li><span>Sandy Bay Ojibway Nation</span> - Ojibwa nation</li>
+                <li><span>Swan Lake First Nation</span> - Anishinaabe (Saulteaux/Ojibwa) nation</li>
+                <li><span>Sagkeeng First Nation</span> - Anicinabe Nation (Primarily Ojibwa)</li>
+            </ul>
+
+            <!-- Groups the following topics in one class so I can style their margins -->
+
+            <div class="topic">
+                <!-- Differences from other treaties  -->
+                <h2>Differences from Other Treaties</h2>
+                <p>
+                    Treaty One is unique in its timing as the first of the numbered treaties, setting a precedent for negotiations between the Crown and Indigenous peoples. Unlike later treaties, it was negotiated during a period of intense settlement and development in the Canadian west.
+                </p>
+            </div>
+
+            <div class="topic">
+            <!-- Historic terms of the treaty -->
+                <h2>Historic Terms of Treaty</h2>
+                <p>
+                    Some promises made by the Crown included giving 160 acres of land for every family of five, with adjustments for smaller or larger families; building and maintaining a school on each reserve; paying each family of five $15, with proportional amounts for different family sizes; and reserving specific areas of land exclusively for the First Nations living there.
+                </p>
+            </div>
+
+            <div class="topic">
+                <!-- Modern implementation  -->
+                <h2>Modern Implementation</h2>
+                <p>
+                    Treaty One is still being implemented today. Such as the Kapyong Urban Reserve in Winnipeg, once a military base, is being transformed by Treaty One First Nations into a space for housing, businesses, and community services. Similarly, the Long Plain First Nations Gas Station contributes to local economic growth by providing jobs and revenue for the community. It also provides indigenous people with treaty status to buy tobacco products and gas free from provincial sales tax. These efforts reflect a commitment to restoring land and fostering self-sufficiency for Treaty One communities.
+                </p>    
+            </div>
+
+
+        </section>
+
+        <!-- Image grid with maps-->
+        <aside>
+            <div id="image-grid">
+                <figure id="map-section">
+                    <img src="Untitled design (9).png" class="map" alt="Map of treaties in Canada with a circle over the area of Treaty One">
+                    <figcaption><em>Image via <a href="https://www.timetoast.com/timelines/canada-treaty-timeline" target="_blank">Timetoast Timeline</a></em></figcaption>
+                </figure>
+    
+                <!-- Two maps in same grid line -->
+                <figure id="two-images">
+                    <img src="Treaties1-5.webp" alt="Manitoba Treaty One close up image">
+                    <img src="treaties1_2_20_online_01-1440x1161.jpg" alt="A more close up image of Treaty One depicting the area in more depth">
+                    <figcaption><em>Image via <a href="https://www.seankheraj.com/lake-winnipeg-treaty-number-five-135th-anniversary/">Sean Kharaj: Canadian History and Environment</a></em></figcaption>
+                    <figcaption><em>Image via <a href="https://canadiangeographic.ca/articles/treaties-1-and-2-reflecting-on-the-150th-anniversary/">Canadian Geographic</a></em></figcaption>
+                </figure>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p><em>Background image via <a href="https://activehistory.ca/blog/2021/08/09/the-sesquicentennial-of-treaty-1/" target="_blank">Active History</a></em></p>
+    </footer>
+</body>
+</html>
