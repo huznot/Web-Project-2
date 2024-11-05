@@ -21,8 +21,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 250vh;
     color: white;
+}
+main{
+    height: 200vh;
 }
 
 /* Navbar styling with background color, padding, and flexbox layout */
