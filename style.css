@@ -10,18 +10,17 @@
 
 /* Selection color */
 ::selection {
-    background: #ff6347;
+    background: #acc8fd;
 }
 
 /* Body styling including background color, image, and text color */
 body {
-    background-color: #1F1F1F;
-    background-image: url(images/background.png);
+    background-color: #fafafa;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 main{
     height: 200vh;
@@ -52,12 +51,12 @@ nav {
 
 /* Hover effect for nav links */
 #nav-links a:hover {
-    color: #ff6347;
+    text-decoration: underline;
 }
 
 /* Content section styling (main section of the page) */
 .content-section {
-    width: 50%;
+    width: 100%;
     padding-left: 50px;
     margin-right: 200px;
 }
@@ -119,11 +118,26 @@ footer a:hover {
 
 /* Link styling inside figcaption (image captions) */
 figcaption a {
-    color: #ff6347;
+    color: #0046c7;
     text-decoration: none;
 }
 
 /* Hover effect for figcaption links */
 figcaption a:hover {
     text-decoration: underline;
+}
+/* Paragraphs styling */
+p{
+    margin-top: 10px;
+}
+/* Style for the things with class topic */
+.topic{
+    margin-top: 30px;
+}
+.colored{
+    color: #0046c7;
+}
+aside{
+    width: 100%;
+    margin-right: 20px;
 }
