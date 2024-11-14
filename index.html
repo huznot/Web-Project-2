@@ -18,15 +18,6 @@ Date Last Modified: 2024-10-21
 
     <!-- Internal CSS -->
     <style>
-
-        /* Flexbox layout for body (this is not in the style.css file because
-         this webpage has a slightly different layout than what i want for the rest of the website) */
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; 
-        }
-
         /* Full width for images in map section */
         #map-section img {
             width: 100%;
@@ -79,38 +70,11 @@ Date Last Modified: 2024-10-21
             margin-top: 10px;
         }
 
-        /* Main content layout */
-        main {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            height: 100vh;
-            padding: 20px;
-            flex: 1; 
-        }
 
-        /* Span text color */
-        span {
-            font-weight: bold;
-        }
-        h1, h2{
-            padding-bottom: 20px;
-            border-bottom: 2px solid #ffe16b;
-        }
         #communities{
             margin-left: 30px;
         }
-        h1{
-            margin-top: 40px;
-        }
-        .content-section{
-            margin-left: 40px;
-            margin-bottom: 20px;
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 5px; /* rounded corner for divs */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+
 
     </style>
 </head>
@@ -119,10 +83,10 @@ Date Last Modified: 2024-10-21
     <header>
         <nav>
             <ul id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">History</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="modern.html">Treaty today</a></li>
+                <li><a href="#">Images</a></li>
                 <li><a href="#">Sources</a></li>
             </ul>
             <div id="search-container">
@@ -171,23 +135,7 @@ Date Last Modified: 2024-10-21
                 <p>Source via <a class="colored" href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549">Government of Canada</a></p>
             </div>
 
-            <div class="topic">
-            <!-- Historic terms of the treaty -->
-                <h2>Historic Terms of Treaty</h2>
-                <p>
-                    Some promises made by the Crown included giving 160 acres of land for every family of five, with adjustments for smaller or larger families; building and maintaining a school on each reserve; paying each family of five $15, with proportional amounts for different family sizes; and reserving specific areas of land exclusively for the First Nations living there.
-                </p>
-                <p>Source via <a class="colored" href="https://scoinc.mb.ca/treaties/">Southern Chiefs Organization Inc.</a></p>
-            </div>
 
-            <div class="topic">
-                <!-- Modern implementation  -->
-                <h2>Modern Implementation</h2>
-                <p>
-                    Treaty One is still being implemented today. Such as the Kapyong Urban Reserve in Winnipeg, once a military base, is being transformed by Treaty One First Nations into a space for housing, businesses, and community services. Similarly, the Long Plain First Nations Gas Station contributes to local economic growth by providing jobs and revenue for the community. It also provides indigenous people with treaty status to buy tobacco products and gas free from provincial sales tax. These efforts reflect a commitment to restoring land and fostering self-sufficiency for Treaty One communities.
-                </p>  
-                <p>Source via <a class="colored" href="https://treaty1.ca/naawi-oodena/">Treaty One</a> and <a class="colored" href="https://www.cbc.ca/news/canada/manitoba/winnipeg-s-1st-urban-reserve-gas-station-officially-opens-1.2968672">CBC</a></p>
-            </div>
 
         </section>
 
